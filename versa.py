@@ -34,3 +34,9 @@ def checkBarcode( img ) :
         # print(x,y,w,h)
 
         # print( ptr.polygon)
+
+        # Define the corner coordinates
+        corner1 = ptr.polygon[0]
+        corner2 = ptr.polygon[1]
+        corner3 = ptr.polygon[2]
+        corner4 = ptr.polygon[3]
