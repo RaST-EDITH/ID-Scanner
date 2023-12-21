@@ -20,3 +20,17 @@ def checkFace( img ) :
     # cv2.imshow('Face', imgRoi)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+
+def checkBarcode( img ) :
+    # To detect the barcode in the image
+    # print(decode(img))
+
+    for ptr in decode(img) :
+        print( ptr.data.decode())
+
+        # print( ptr.rect)
+        # x, y, w , h = ptr.rect
+        # print(x,y,w,h)
+
+        # print( ptr.polygon)
