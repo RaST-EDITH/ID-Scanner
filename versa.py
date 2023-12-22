@@ -7,7 +7,7 @@ def checkFace( img ) :
     # To detect the face in the image
 
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faceCascade = cv2.CascadeClassifier(r"C:\Users\ASUS\haarcascade_frontalface_default.xml")
+    faceCascade = cv2.CascadeClassifier(r"C:\Users\ASUS\OneDrive\Documents\GitHub\ID-Scanner\haarcascade_frontalface_default.xml")
     face_rtg = faceCascade.detectMultiScale(gray_img, 1.3, 9)
     # print( face_rtg )
 
@@ -40,3 +40,16 @@ def checkBarcode( img ) :
         corner2 = ptr.polygon[1]
         corner3 = ptr.polygon[2]
         corner4 = ptr.polygon[3]
+
+        # Create an array of the corner coordinates
+        pts = np.array([corner1, corner2, corner3, corner4], np.int32)
+        pts = pts.reshape((-1, 1, 2))
+
+        # Draw the quadrilateral on the image
+        cv2.polylines(img, [pts], True, (0, 255, 0), 2)
+
+        # cv2.rectangle(img, ptr.polygon[0], ptr.polygon[1], ptr.polygon[2], ptr.polygon[3], ( 0, 255, 0), 2)
+
+        cv2.imshow('Detected QR', img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
