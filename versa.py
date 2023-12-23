@@ -53,3 +53,20 @@ def checkBarcode( img ) :
         cv2.imshow('Detected QR', img)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
+
+def locateId( img ) :
+    # To locate the id in the frame
+
+    gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    cv2.imshow('Original', img)
+    edges = cv2.Canny( gray_img, 50, 100)
+  
+    # Display edges in a frame
+    cv2.imshow('Edges', edges)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+img = cv2.imread(r"image")
+# locateId( img )
+checkFace( img )
+checkBarcode( img )
