@@ -66,7 +66,7 @@ def locateId( img ) :
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-img = cv2.imread(r"image")
+img = cv2.imread("File_Path")
 # locateId( img )
 checkFace( img )
 checkBarcode( img )
