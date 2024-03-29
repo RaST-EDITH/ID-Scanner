@@ -1,0 +1,6 @@
+numpy==1.23.5
+opencv-python==4.6.0.66
+packaging==24.0
+pillow==10.2.0
+pytesseract==0.3.10
+pyzbar==0.1.9
