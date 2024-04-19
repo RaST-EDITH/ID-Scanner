@@ -90,12 +90,8 @@ Contributions to this project are welcome. If you have ideas for improvements or
 ## 📎 Contact
 
 
-If you have any questions or need assistance with the Task Monitoring project, please don't hesitate to contact us at 
+If you have any questions or need assistance with the  project, please don't hesitate to contact us at 
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raghvendra-singh-053977226)
-
- We are here to help you stay organized and monitor your daily task progress effectively.
-
-
 
 
